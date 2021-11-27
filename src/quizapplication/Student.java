@@ -296,12 +296,13 @@ public class Student extends javax.swing.JFrame {
          
     }
 
-    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+    public void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
 
         String sname = textSname.getText();
         String age = textAge.getText();
         String phone = textPhone.getText();
         String address = textAddress.getText();
+        
 
         try {
 
@@ -327,7 +328,7 @@ public class Student extends javax.swing.JFrame {
         btnRefresh.doClick();
     }//GEN-LAST:event_btnSaveActionPerformed
 
-    private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
+    public void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
 
         btnRefresh.setText("Wait...");
         dtm = (DefaultTableModel) tableStudent.getModel();
@@ -379,7 +380,7 @@ public class Student extends javax.swing.JFrame {
 
     }//GEN-LAST:event_tableStudentMouseClicked
 
-    private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
+    public void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
        
         String sname = textSname.getText();
         String age = textAge.getText();
@@ -411,13 +412,13 @@ public class Student extends javax.swing.JFrame {
         ClearForm();
     }//GEN-LAST:event_btnEditActionPerformed
 
-    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+    public void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         ClearForm();
         tableStudent.clearSelection();
         btnSave.setEnabled(true);
     }//GEN-LAST:event_btnClearActionPerformed
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    public void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
        
          try {
 
@@ -491,27 +492,27 @@ public class Student extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnClear;
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnEdit;
-    private javax.swing.JButton btnRefresh;
-    private javax.swing.JButton btnSave;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTable tableStudent;
-    private javax.swing.JTextField textAddress;
-    private javax.swing.JTextField textAge;
-    private javax.swing.JTextField textPhone;
-    private javax.swing.JTextField textSname;
+    public javax.swing.JButton btnClear;
+    public javax.swing.JButton btnDelete;
+    public javax.swing.JButton btnEdit;
+    public javax.swing.JButton btnRefresh;
+    public javax.swing.JButton btnSave;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel jLabel5;
+    public javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel2;
+    public javax.swing.JPanel jPanel3;
+    public javax.swing.JPanel jPanel4;
+    public javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JScrollPane jScrollPane2;
+    public javax.swing.JScrollPane jScrollPane3;
+    public javax.swing.JTable tableStudent;
+    public javax.swing.JTextField textAddress;
+    public javax.swing.JTextField textAge;
+    public javax.swing.JTextField textPhone;
+    public javax.swing.JTextField textSname;
     // End of variables declaration//GEN-END:variables
 }
